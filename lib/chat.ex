@@ -50,7 +50,7 @@ defmodule Chat do
     end)
   end
 
-  def fetch_all_messages do
+  def show_messages do
     :mnesia.transaction(fn ->
       :mnesia.match_object({:messages, :_, :_, :_})
     end)
