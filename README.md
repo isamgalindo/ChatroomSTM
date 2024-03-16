@@ -24,6 +24,15 @@ Para enviar un mensaje se pone el usuario y el mensaje que se quiere enviar:
 Chat.write_message("Isabela", "Holaa")
 Chat.write_message(3, "Holaaa")
 ```
+Para ver los mensajes que se han enviado:
+``` elixir
+Chat.show_messages()
+```
+Para eliminar un usuario. Por eljemplo si se quiere eliminar el usuario 1.
+``` elixir
+Chat.delete_user(1)
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
