@@ -7,20 +7,20 @@ mix compile
 ```
 Luego ejecutar el siguiente comando para entrar a una terminal de elixir:
 ```
-iex iex -S mix
+iex -S mix
 ```
 Para empezar a probar el código, se debe crear un chatroom con n usuarios. "n" se debe cambiar por el número deseado de ususarios.
-```
+``` elixir
 Chat.start_chat(n)
 ```
 Para añadir un usuario:
-```
+``` elixir
 # user_id puede ser un numero o un nombre. Recordar que si se quiere poner un nombre se debe poner entre comillas
 Chat.add_user("Isabela")
 Chat.add_user(6)
 ```
 Para enviar un mensaje se pone el usuario y el mensaje que se quiere enviar:
-```
+``` elixir
 Chat.write_message("Isabela", "Holaa")
 Chat.write_message(3, "Holaaa")
 ```
